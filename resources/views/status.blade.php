@@ -26,17 +26,10 @@ use App\Http\Controllers\PizzaController;
     </nav>
 </header>
 
-<main class="flex flex-col items-center justify-center mx-auto mt-8 p-4 bg-blue-500 rounded-md shadow-md text-white">
-    <h2 class="text-2xl font-bold mb-2">Welcome to StonksPizza</h2>
-    <p>Explore our delicious pizza menu and place your order. From classic Margherita to innovative Stonks Special, we have a variety of pizzas to satisfy your cravings.</p>
-    <p>We use the finest ingredients and traditional recipes to deliver a mouth-watering pizza experience. Don't miss out on our limited-time offers and exclusive deals.</p>
-    <p>Visit us today and embark on a journey of flavor!</p>
-</main>
-
-<!-- New blank box -->
-<div class="flex flex-col items-center justify-center mx-auto mt-8 p-4 bg-blue-500 rounded-md shadow-md">
-    <!-- This box is blank -->
+<div class="flex-grow flex items-center justify-center">
+    <div class="w-64 h-64 border border-white bg-blue-500"></div>
 </div>
+
 
 <footer class="bg-blue-500 text-white p-4 w-full mt-auto">
     <div class="flex justify-between items-center">
@@ -46,18 +39,19 @@ use App\Http\Controllers\PizzaController;
             <p>Phone: +1 123-456-7890</p>
         </div>
         <div class="flex items-center">
-            <!-- Social Media Logos -->
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Add more social media logos as needed -->
-        </div>
+    <!-- Social Media Logos -->
+    <a href="https://www.instagram.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.youtube.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <!-- Add more social media logos as needed -->
+</div>
+
     </div>
 </footer>
 

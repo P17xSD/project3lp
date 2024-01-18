@@ -46,18 +46,19 @@ use App\Http\Controllers\PizzaController;
             <p>Phone: +1 123-456-7890</p>
         </div>
         <div class="flex items-center">
-            <!-- Social Media Logos -->
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="text-white mx-2 hover:text-gray-300">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Add more social media logos as needed -->
-        </div>
+    <!-- Social Media Logos -->
+    <a href="https://www.instagram.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.youtube.com/" class="text-white mx-2 hover:text-gray-300" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <!-- Add more social media logos as needed -->
+</div>
+
     </div>
 </footer>
 
