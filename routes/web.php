@@ -26,7 +26,11 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('pizzapizza', PizzaController::class)->middleware('auth')->except(['index', 'show']);
-Route::get('/pizzapizza', [PizzaController::class, 'index'])->name('indexMain');
-Route::get('/pizzapizza/show/{id}', [PizzaController::class, 'Show'])->name('showMain');
+Route::get('/pizzapizza', [PizzaController::class, 'index'])->name('index');
+Route::get('/pizzapizza/show/{id}', [PizzaController::class, 'show'])->name('showMain');
+Route::get('/pizzapizza/status', [PizzaController::class, 'show'])->name('status');
+Route::get('/second-page', [PizzaController::class,'show'])->name('second-page');
+
+
 
 require __DIR__.'/auth.php';
