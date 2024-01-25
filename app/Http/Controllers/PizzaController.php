@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class PizzaController extends Controller
 {
+    private $pizzas = [];
     /**
      * Display a listing of the resource.
      */

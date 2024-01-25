@@ -22,6 +22,7 @@ use App\Http\Controllers\PizzaController;
             <li class="mr-4"><a href="{{route('index')}}" class="text-lg hover:text-gray-300">Home</a></li>
             <li class="mr-4"><a href="{{route('menu')}}" class="text-lg hover:text-gray-300">Menu</a></li>
             <li><a href="{{ route('status') }}" class="text-lg hover:text-gray-300">Status</a></li>
+            <li><a href="{{ route('order.index') }}" class="text-lg hover:text-gray-300">Order</a></li>
         </ul>
     </nav>
 </header>

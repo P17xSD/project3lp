@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PizzaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OrderPizzaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +27,11 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('pizzapizza', PizzaController::class)->middleware('auth')->except(['index', 'show']);
+Route::resource('order', OrderPizzaController::class)->middleware('auth')->except(['index', 'store', 'edit']);
 Route::get('/pizzapizza', [PizzaController::class, 'index'])->name('index');
+Route::get('/order', [OrderPizzaController::class, 'index'])->name('order.index');
+Route::post('/order/add', [OrderPizzaController::class, 'add'])->name('order.add');
+Route::get('/order/edit/{index}', [OrderPizzaController::class, 'edit'])->name('order.edit');
 Route::get('/pizzapizza/show/{id}', [PizzaController::class, 'show'])->name('showMain');
 Route::get('/pizzapizza/status', [PizzaController::class, 'show'])->name('status');
 Route::get('/pizzapizza/menu', [PizzaController::class, 'show'])->name('menu');
