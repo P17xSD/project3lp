@@ -29,6 +29,7 @@ Route::resource('pizzapizza', PizzaController::class)->middleware('auth')->excep
 Route::get('/pizzapizza', [PizzaController::class, 'index'])->name('index');
 Route::get('/pizzapizza/show/{id}', [PizzaController::class, 'show'])->name('showMain');
 Route::get('/pizzapizza/status', [PizzaController::class, 'show'])->name('status');
+Route::get('/pizzapizza/menu', [PizzaController::class, 'show'])->name('menu');
 Route::get('/second-page', [PizzaController::class,'show'])->name('second-page');
 
 

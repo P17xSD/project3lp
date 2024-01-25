@@ -20,7 +20,7 @@ use App\Http\Controllers\PizzaController;
     <nav class="mt-2">
         <ul class="flex">
             <li class="mr-4"><a href="{{route('index')}}" class="text-lg hover:text-gray-300">Home</a></li>
-            <li class="mr-4"><a href="#" class="text-lg hover:text-gray-300">Menu</a></li>
+            <li class="mr-4"><a href="{{route('menu')}}" class="text-lg hover:text-gray-300">Menu</a></li>
             <li><a href="{{ route('status') }}" class="text-lg hover:text-gray-300">Status</a></li>
         </ul>
     </nav>
