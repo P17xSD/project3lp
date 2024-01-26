@@ -27,10 +27,10 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('pizzapizza', PizzaController::class)->middleware('auth')->except(['index', 'show']);
-Route::resource('order', OrderPizzaController::class)->middleware('auth')->except(['index', 'store', 'edit']);
+Route::resource('order', OrderPizzaController::class)->middleware('auth')->except(['index', 'store', 'edit', 'show']);
 Route::get('/pizzapizza', [PizzaController::class, 'index'])->name('index');
 Route::get('/order', [OrderPizzaController::class, 'index'])->name('order.index');
-Route::post('/order/add', [OrderPizzaController::class, 'add'])->name('order.add');
+Route::post('/order/add', [OrderPizzaController::class, 'create'])->name('order.create');
 Route::get('/order/edit/{index}', [OrderPizzaController::class, 'edit'])->name('order.edit');
 Route::get('/pizzapizza/show/{id}', [PizzaController::class, 'show'])->name('showMain');
 Route::get('/pizzapizza/status', [PizzaController::class, 'show'])->name('status');

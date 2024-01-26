@@ -18,8 +18,9 @@ class OrderPizzaController extends Controller
 
     public function create()
     {
-        return view('order.create');
+        return view('order.add');
     }
+    
 
     public function store(Request $request)
     {

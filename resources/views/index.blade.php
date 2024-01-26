@@ -19,20 +19,17 @@ use App\Http\Controllers\PizzaController;
     <h1 class="text-5xl mb-2">StonksPizza</h1>
     <nav class="mt-2">
         <ul class="flex">
-<<<<<<< Updated upstream
-            <li class="mr-4"><a href="{{route('index')}}" class="text-lg hover:text-gray-300">Home</a></li>
-            <li class="mr-4"><a href="{{route('menu')}}" class="text-lg hover:text-gray-300">Menu</a></li>
-            <li><a href="{{ route('status') }}" class="text-lg hover:text-gray-300">Status</a></li>
-            <li><a href="{{ route('order.index') }}" class="text-lg hover:text-gray-300">Order</a></li>
-=======
             <li class="mr-4">
                 <a href="{{route('index')}}" class="text-lg hover:text-gray-300">Home</a>
             </li>
             <li class="mr-4">
                 <a href="#" class="text-lg hover:text-gray-300">Menu</a>
             </li>
-            <li>
+            <li class="mr-4">
                 <a href="{{ route('status') }}" class="text-lg hover:text-gray-300">Status</a>
+            </li>
+            <li class="mr-4">
+                <a href="{{ route('order.index') }}" class="text-lg hover:text-gray-300">Order</a>
             </li>
             @if (auth()->check())
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="bg-blue-500 border-blue-950 border-2 border-b-4 border-t-4 text-center text-4xl logoutImage">
@@ -46,7 +43,6 @@ use App\Http\Controllers\PizzaController;
                     <img src="{{asset('Assets/login.png')}}" alt="Login" class="loginImage w-6 h-6"> <!-- Adjust width and height as needed -->
                 </a>
             @endif
->>>>>>> Stashed changes
         </ul>
     </nav>
 </header>
